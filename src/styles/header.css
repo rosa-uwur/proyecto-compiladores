@@ -1,0 +1,52 @@
+:root {
+    --color1: #491a16;
+    --color2: #6f311f;
+    --color3: #a05528;
+    --color4: #a68779;
+    --color5: #ffcd39;
+    --letra: #ffedddfa;
+}
+
+@font-face {
+    font-family: "Wix Madefor Display";
+    src: url('../assets/fonts/WixMadeforDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color1);
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color4);
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 12%;
+}
+
+a {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Wix Madefor Display";
+    margin: 0;
+}
+

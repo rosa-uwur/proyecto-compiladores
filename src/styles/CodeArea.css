@@ -1,0 +1,40 @@
+.contenedor-textarea {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna automática para números de línea, columna flexible para texto */
+    gap: 10px; /* Espacio entre las columnas */
+    height: calc(100vh - 12%);
+    padding-top: 8%;
+}
+
+.lineas {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #d3ccc9;
+    padding-right: 1px;
+    padding-left: 10px;
+    padding-top: 0.7em; /* Ajustar el valor según la separación deseada */
+    text-align: right; /* Alineación de los números de línea a la derecha */
+}
+
+
+.lineNumber{
+    padding-top: 0.2em;
+    padding-bottom: 0.15em;
+    display: block;
+}
+
+.texto {
+    overflow: hidden;
+    border: 2px solid #6e4c3f;
+    border-radius: 1cqmax;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.texto:focus {
+    outline: none;
+    border-color: #b78b6a;
+}
