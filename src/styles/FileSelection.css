@@ -1,0 +1,54 @@
+.fileselection-container {
+    padding-top: 6.5%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+}
+
+.fileselection-inner {
+    background-color: #E3DED7;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    width: 93%;
+}
+
+.fileselection-inner p{
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    border: 2px solid #C8BEB5;
+    /* Borde del input en tono tierra */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="file"]:hover {
+    border-color: #A89C92;
+    /* Cambio de color al pasar el mouse */
+}
+
+input[type="submit"] {
+    background-color: #84582B;
+    /* Botón en tono café oscuro */
+    color: #FFFFFF;
+    /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6B4921;
+    /* Cambio de color al pasar el mouse */
+}

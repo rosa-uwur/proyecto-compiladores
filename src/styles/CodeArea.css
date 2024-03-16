@@ -10,7 +10,7 @@
     grid-template-columns: auto 1fr; /* Columna automática para números de línea, columna flexible para texto */
     gap: 10px; /* Espacio entre las columnas */
     height: calc(100vh - 12%);
-    padding-top: 8%;
+    padding-top: 1%;
 }
 
 .lineas {
