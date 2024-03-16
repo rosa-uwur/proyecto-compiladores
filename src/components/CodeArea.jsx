@@ -3,6 +3,7 @@ import '../styles/CodeArea.css'
 
 function CodeArea() {
     const [texto, setTexto] = useState('');
+    const textoSalida = "";
 
     const handleChange = (event) => {
         setTexto(event.target.value);
@@ -14,7 +15,7 @@ function CodeArea() {
     };
 
     return (
-        <div>
+        <div className='main-code-container'>
             <div className="contenedor-textarea">
                 <div className="lineas">{generarNumerosLinea()}</div>
                 <textarea
@@ -24,6 +25,17 @@ function CodeArea() {
                     rows="25"
                     cols="30"
                     placeholder="Escribe aquí..."
+                />
+            </div>
+            <div className='contenedor-salida'>
+            <textarea
+                    className="salida"
+                    value={textoSalida}
+                    onChange={handleChange}
+                    rows="25"
+                    cols="30"
+                    readOnly
+                    placeholder="Salida compilación."
                 />
             </div>
         </div>

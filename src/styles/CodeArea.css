@@ -1,4 +1,11 @@
-.contenedor-textarea {
+.main-code-container{
+    display: flex;
+    flex-direction: row; /* Alinear los elementos en fila */
+}
+
+
+.contenedor-textarea,
+.contenedor-salida{
     display: grid;
     grid-template-columns: auto 1fr; /* Columna automática para números de línea, columna flexible para texto */
     gap: 10px; /* Espacio entre las columnas */
@@ -12,7 +19,7 @@
     color: #d3ccc9;
     padding-right: 1px;
     padding-left: 10px;
-    padding-top: 0.7em; /* Ajustar el valor según la separación deseada */
+    padding-top: 0.5em; /* Ajustar el valor según la separación deseada */
     text-align: right; /* Alineación de los números de línea a la derecha */
 }
 
@@ -23,7 +30,10 @@
     display: block;
 }
 
-.texto {
+
+.texto,
+.salida {
+    width: 100%;
     overflow: hidden;
     border: 2px solid #6e4c3f;
     border-radius: 1cqmax;
@@ -32,9 +42,42 @@
     resize: vertical;
     background-color: #ffffff;
     color: #333333;
+    box-sizing: border-box; 
 }
+
+
+
+.contenedor-textarea,
+.contenedor-salida {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
 
 .texto:focus {
     outline: none;
     border-color: #b78b6a;
+}
+
+
+.contenedor-salida {
+    flex: 1; /* Ocupar el espacio disponible */
+    margin-right: 50px; /* Espacio entre los elementos */
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+}
+
+.salida {
+    flex: 1; /* Ocupar todo el espacio disponible en la columna */
+    width: 100%;
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: var(--letra);
+}
+
+
+.texto{
+    font-family: 'Courier New', Courier, monospace ;
 }
