@@ -14,47 +14,6 @@ import '../assets/ReservedWords/mode-eevee';
 
 
 function CodeArea() {
-    // const [texto, setTexto] = useState('s');
-    const textoSalida = "";
-    // const handleInputChange = (texto) => {
-    //     setTexto(texto);
-    // };
-
-    // const generarNumerosLinea = () => {
-    //     const lineas = texto.split('\n');
-    //     return lineas.map((linea, index) => <span key={index} className='lineNumber'>{index + 1}<br /></span>);
-    // };
-
-    // const [code, setCode] = useState('');
-
-    // const handleCodeChange = (e) => {
-    //     setCode(e.target.value);
-    // };
-
-    // const resaltarPalabrasReservadas = (texto) => {
-    //     const palabrasReservadasEv = palabrasReservadas.Eevee;
-    //     const palabrasReservadasTipos = {
-    //         condicionales: { color: 'red', fontWeight: 'bold' },
-    //         ciclos: { color: 'blue', fontWeight: 'bold' },
-    //     };
-
-    //     let textoResaltado = texto;
-
-    //     Object.keys(palabrasReservadasEv).forEach((tipo) => {
-    //         const palabrasTipo = palabrasReservadasEv[tipo];
-    //         const estiloTipo = palabrasReservadasTipos[tipo];
-
-    //         if (palabrasTipo && estiloTipo) {
-    //             const regex = new RegExp(`\\b(${palabrasTipo.join('|')})\\b`, 'g');
-    //             textoResaltado = textoResaltado.replace(
-    //                 regex,
-    //                 `<span style="color: ${estiloTipo.color}; font-weight: ${estiloTipo.fontWeight};">$1</span>`
-    //             );
-    //         }
-    //     });
-
-    //     return textoResaltado;
-    // };
 
 
     const [code, setCode] = useState('');
@@ -66,11 +25,6 @@ function CodeArea() {
 
     ace.config.set('basePath', '../');
 
-    // const highlightedCode = highlightReservedWords(code);
-    // AceEditor.edit(element, {
-    //     mode: "../assets/ReservedWords/mode-eevee",
-    //     selectionStyle: "eevee"
-    // })
 
     return (
         <div className='main-code-container'>
@@ -85,16 +39,15 @@ function CodeArea() {
                     style={{ width: '100%', height: '500px' }} // Estilo del editor
                 />
             </div>
-                /* <div className='contenedor-salida'>
-                <textarea
-                    className="salida"
-                    value={textoSalida}
-                    //onChange={handleChange}
-                    rows="25"
-                    cols="30"
-                    readOnly
-                    placeholder="Salida compilación."
-                />
+            <div className='contenedor-salida'>
+                <div className='salida'>
+                    <h1>Resultado Compilación:</h1>
+                    <hr />
+                    <h2>Análisis léxico</h2>
+                    <p>aún no hay nada para mostrar...</p>
+                    <h2>Análisis Sintáctico</h2>
+                    <p>aún no hay nada para mostrar...</p>
+                </div>
             </div> */
         </div>
     );

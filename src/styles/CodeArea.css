@@ -1,14 +1,17 @@
-.main-code-container{
+.main-code-container {
     display: flex;
-    flex-direction: row; /* Alinear los elementos en fila */
+    flex-direction: row;
+    /* Alinear los elementos en fila */
 }
 
 
 .contenedor-textarea,
-.contenedor-salida{
+.contenedor-salida {
     display: grid;
-    grid-template-columns: auto 1fr; /* Columna automática para números de línea, columna flexible para texto */
-    gap: 10px; /* Espacio entre las columnas */
+    grid-template-columns: auto 1fr;
+    /* Columna automática para números de línea, columna flexible para texto */
+    gap: 10px;
+    /* Espacio entre las columnas */
     height: calc(100vh - 12%);
     padding-top: 1%;
 }
@@ -19,12 +22,14 @@
     color: #d3ccc9;
     padding-right: 1px;
     padding-left: 10px;
-    padding-top: 0.5em; /* Ajustar el valor según la separación deseada */
-    text-align: right; /* Alineación de los números de línea a la derecha */
+    padding-top: 0.5em;
+    /* Ajustar el valor según la separación deseada */
+    text-align: right;
+    /* Alineación de los números de línea a la derecha */
 }
 
 
-.lineNumber{
+.lineNumber {
     padding-top: 0.2em;
     padding-bottom: 0.15em;
     display: block;
@@ -42,15 +47,15 @@
     resize: vertical;
     background-color: #ffffff;
     color: #333333;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
 
 .contenedor-textarea,
 .contenedor-salida {
-    flex: 1; 
-    margin-right: 10px; 
+    flex: 1;
+    margin-right: 10px;
 }
 
 
@@ -61,16 +66,21 @@
 
 
 .contenedor-salida {
-    flex: 1; /* Ocupar el espacio disponible */
-    margin-right: 50px; /* Espacio entre los elementos */
+    flex: 1;
+    /* Ocupar el espacio disponible */
+    margin-right: 50px;
+    /* Espacio entre los elementos */
     display: flex;
-    flex-direction: column; /* Alinear los elementos en columna */
+    flex-direction: column;
+    /* Alinear los elementos en columna */
 }
 
 .salida {
-    flex: 1; /* Ocupar todo el espacio disponible en la columna */
+    flex: 1;
+    /* Ocupar todo el espacio disponible en la columna */
     width: 100%;
-    box-sizing: border-box; /* Incluir el padding y el borde en el ancho */
+    box-sizing: border-box;
+    /* Incluir el padding y el borde en el ancho */
     cursor: default;
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
@@ -78,6 +88,29 @@
 }
 
 
-.texto{
-    font-family: 'Courier New', Courier, monospace ;
+.texto {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.salida {
+    background-color: #fff2e6;
+    /* Fondo claro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    color: #333;
+    /* Texto oscuro para contraste */
+    font-family: Arial, sans-serif;
+    height: 5000px;
+}
+
+.salida h2 {
+    color: #8b4513;
+    /* Marrón oscuro para los títulos */
+}
+
+.salida p {
+    color: #555;
+    /* Texto más claro */
 }
