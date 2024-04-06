@@ -4,9 +4,9 @@ ace.define("ace/mode/Eevee_highlight_rules", ["require", "exports", "module", "a
     var TextHighlightRules = require("./text_highlight_rules").TextHighlightRules;
     var EeveeHighlightRules = function () {
         var keywords = "roca|agua|acero|fuego|bicho|onix|onyx|combee|objects|" +
-            "Slow|King|Pikachu|Pika|chispa|klink|klang|entei|Master|" +
-            "Poke|Super|Ultra|Movimiento|Grunido|Mordisco|Ditto|ecl|eclosion|eclosión|Contraataque|" +
-            "Slow|king";
+            "slow|king|pikachu|pika|chispa|klink|klang|entei|master|" +
+            "poke|super|ultra|movimiento|grunido|mordisco|ditto|ecl|eclosion|eclosión|contraataque|" +
+            "slow|king|antidoto|veneno";
         var builtinConstants = ("true|false|null");
         var builtinFunctions = ("count|min|max|avg|sum|rank|now|coalesce|main");
         var keywordMapper = this.createKeywordMapper({
@@ -56,6 +56,7 @@ ace.define("ace/mode/Eevee_highlight_rules", ["require", "exports", "module", "a
                     token: "text",
                     regex: "\\s+"
                 }
+                
             ]
         };
     };
