@@ -11,7 +11,7 @@ function Header() {
                     <a href="#" target="_blank">
                         <img src={eeveeLogo} className="logo" alt="Eevee logo" />
                     </a>
-                    <h1>Eevee uwu </h1>
+                    <h1>GTA </h1>
                 </nav>
             </div>
         </>

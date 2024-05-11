@@ -114,3 +114,52 @@
     color: #555;
     /* Texto más claro */
 }
+
+
+
+.contenedor-salida {
+    flex: 1;
+    /* Ocupar todo el espacio disponible en la columna */
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Incluir el padding y el borde en el ancho */
+    display: flex;
+    background-color: #b78b6a;
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    /* Alinear los elementos en columna */
+}
+
+.analysis-result {
+    margin-top: 20px;
+    /* Margen superior para separar de otros elementos */
+}
+
+.analysis-result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* Margen inferior para separar de otros elementos */
+}
+
+.analysis-result th,
+.analysis-result td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.analysis-result th {
+    background-color: #6e4c3f;
+    color: #fff;
+}
+
+.analysis-result tbody tr:nth-child(even) {
+    background-color: #ffd5c1;
+}
+
+.analysis-result tbody tr:hover {
+    background-color: #995700;
+}

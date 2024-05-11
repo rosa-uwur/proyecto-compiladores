@@ -1,19 +1,20 @@
 import { useState } from 'react'
 import '../styles/AnalysisButton.css'
+import axios from 'axios';
 
-function AnalysisButton() {
+function AnalysisButton({ code, onAnalysisResult }) {
 
-    // Función para manejar el clic en el botón de análisis léxico
     const handleAnalisisLexico = async () => {
-        // Llamada a la API para análisis léxico
-        // try {
-        //     const response = await fetch('url_analisis_lexico');
-        //     const data = await response.json();
-        //     console.log('Resultado del análisis léxico:', data);
-        // } catch (error) {
-        //     console.error('Error en el análisis léxico:', error);
-        // }
-        alert("Funcional en fase 1");
+        try {
+
+            const response = await axios.post('http://localhost:8080/analisisLexico', { texto: code });
+            onAnalysisResult(response.data);
+           // alert('Análisis léxico completado:\n' + JSON.stringify(response.data));
+        } catch (error) {
+            console.error('Error al realizar el análisis léxico:', error);
+            alert('Ocurrió un error al realizar el análisis léxico');
+
+        }
     };
 
     // Función para manejar el clic en el botón de análisis sintáctico

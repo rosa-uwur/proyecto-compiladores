@@ -12,8 +12,8 @@ function FileSelection() {
                     <MdCatchingPokemon />
                     <p id='fileselector-p'>  Elige un archivo de tu computadora!</p>
                     <form action="/upload" method="post" enctype="multipart/form-data">
-                        <input type="file" name="archivo" id="archivo" accept=".eve" />
-                        <input type="submit" value="Subir Archivo" />
+                        <input type="file" name="archivo" id="archivo" accept=".*" />
+                        <input type="submit" value="Subir Archivo"   onChange={handleFileUpload} />
                     </form>
                 </div>
             </div>
