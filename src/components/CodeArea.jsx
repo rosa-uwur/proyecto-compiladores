@@ -128,7 +128,6 @@ function CodeArea() {
                             <tr>
                                 <th>Mensaje</th>
                                 <th>Línea</th>
-                                <th>Token</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -136,7 +135,6 @@ function CodeArea() {
                                 <tr key={index}>
                                     <td>{error.mensaje}</td>
                                     <td>{error.linea}</td>
-                                    <td>{error.token}</td>
                                 </tr>
                             ))}
                         </tbody>
