@@ -113,12 +113,12 @@ function CodeArea() {
                             </tr>
                         </thead>
                         <tbody>
-                            {analysisResult.simbolos.cabeza && (
-                                <tr>
-                                    <td>{analysisResult.simbolos.cabeza.dato.lexema}</td>
-                                    <td>{analysisResult.simbolos.cabeza.dato.atributo}</td>
+                        {analysisResult.tablaTokens.map((error, index) => (
+                                <tr key={index}>
+                                    <td>{error.lexema}</td>
+                                    <td>{error.categoriaLexica}</td>
                                 </tr>
-                            )}
+                            ))}
                         </tbody>
                     </table>
 
