@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/CodeArea.css'
+import '../styles/codearea.css'
 //import ResaltadoTextarea from "./ResaltadoTextarea.jsx"
 import ace from "ace-builds";
 import reservedWords from '../assets/ReservedWords/reservedWords.json';
@@ -109,6 +109,7 @@ function CodeArea() {
                         <thead>
                             <tr>
                                 <th>Lexema</th>
+                                
                                 <th>Atributo</th>
                             </tr>
                         </thead>
@@ -116,6 +117,7 @@ function CodeArea() {
                         {analysisResult.tablaTokens.map((error, index) => (
                                 <tr key={index}>
                                     <td>{error.lexema}</td>
+                                    
                                     <td>{error.categoriaLexica}</td>
                                 </tr>
                             ))}
@@ -127,6 +129,7 @@ function CodeArea() {
                         <thead>
                             <tr>
                                 <th>Mensaje</th>
+                                <th>Tipo error</th>
                                 <th>Línea</th>
                             </tr>
                         </thead>
@@ -134,6 +137,7 @@ function CodeArea() {
                             {analysisResult.tablaErrores.map((error, index) => (
                                 <tr key={index}>
                                     <td>{error.mensaje}</td>
+                                    <td>{error.tipoError}</td>
                                     <td>{error.linea}</td>
                                 </tr>
                             ))}

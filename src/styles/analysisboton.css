@@ -1,0 +1,29 @@
+.botones-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn-analisis-lexico,
+.btn-analisis-sintactico {
+    padding: 20px 25px;
+    border: none;
+    font-family: "Wix Madefor Display", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-analisis-lexico {
+    background-color: var(--color3);
+}
+
+.btn-analisis-sintactico {
+    background-color: var(--color3);
+}
+
+.btn-analisis-lexico:hover,
+.btn-analisis-sintactico:hover {
+    opacity: 0.9;
+}

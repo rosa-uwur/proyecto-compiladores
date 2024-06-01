@@ -1,9 +1,9 @@
 :root {
-    --color1: #491a16;
-    --color2: #6f311f;
+    --color1: #562520;
+    --color2: #7b3d2c;
     --color3: #a05528;
-    --color4: #a68779;
-    --color5: #eee3c3;
+    --color4: #b7856e;
+    --color5: #ebdbaa;
     --letra: #fcf2e9fa;
 }
 
@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--color4);
-    padding: 10px;
+    padding: 40px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -35,18 +35,17 @@ body {
     margin: 0;
     padding: 0;
     position: fixed;
-    height: 12%;
+    height: 10%;
 }
 
 a {
     width: 100px;
     height: auto;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     font-family: "Wix Madefor Display";
     margin: 0;
 }
-

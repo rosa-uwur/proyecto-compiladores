@@ -1,5 +1,4 @@
 .main-code-container {
-    display: flex;
     flex-direction: row;
     /* Alinear los elementos en fila */
 }
@@ -10,19 +9,19 @@
     display: grid;
     grid-template-columns: auto 1fr;
     /* Columna automática para números de línea, columna flexible para texto */
-    gap: 10px;
+    gap: 15px;
     /* Espacio entre las columnas */
-    height: calc(100vh - 12%);
-    padding-top: 1%;
+    height: calc(500vh - 25%);
+    padding-top: 25%;
 }
 
 .lineas {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-size: 30px;
     color: #d3ccc9;
-    padding-right: 1px;
-    padding-left: 10px;
-    padding-top: 0.5em;
+    padding-right: 25px;
+    padding-left: 50px;
+    padding-top: 5em;
     /* Ajustar el valor según la separación deseada */
     text-align: right;
     /* Alineación de los números de línea a la derecha */
@@ -30,8 +29,8 @@
 
 
 .lineNumber {
-    padding-top: 0.2em;
-    padding-bottom: 0.15em;
+    padding-top: 0.4em;
+    padding-bottom: 0.25em;
     display: block;
 }
 
@@ -40,22 +39,21 @@
 .salida {
     width: 100%;
     overflow: hidden;
-    border: 2px solid #6e4c3f;
-    border-radius: 1cqmax;
-    font-size: 16px;
-    line-height: 1.5;
-    resize: vertical;
+    border: 15px solid #6e4c3f;
+    border-radius: 3cqmax;
+    font-size: 35px;
+    line-height: 5;
+    resize: block;
     background-color: #ffffff;
     color: #333333;
     box-sizing: border-box;
 }
 
 
-
 .contenedor-textarea,
 .contenedor-salida {
-    flex: 1;
-    margin-right: 10px;
+    flex: 35;
+    margin-right: 100px;
 }
 
 
@@ -66,9 +64,9 @@
 
 
 .contenedor-salida {
-    flex: 1;
+    flex: 2;
     /* Ocupar el espacio disponible */
-    margin-right: 50px;
+    margin-right: 55px;
     /* Espacio entre los elementos */
     display: flex;
     flex-direction: column;
@@ -76,7 +74,7 @@
 }
 
 .salida {
-    flex: 1;
+    flex: 2;
     /* Ocupar todo el espacio disponible en la columna */
     width: 100%;
     box-sizing: border-box;
@@ -147,7 +145,7 @@
 .analysis-result th,
 .analysis-result td {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     text-align: left;
 }
 

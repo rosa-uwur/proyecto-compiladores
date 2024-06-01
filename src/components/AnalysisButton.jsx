@@ -9,7 +9,7 @@ function AnalysisButton({ code, onAnalysisResult }) {
 
             const response = await axios.post('http://localhost:8080/analisisLexico', { texto: code });
             onAnalysisResult(response.data);
-           // alert('Análisis léxico completado:\n' + JSON.stringify(response.data));
+            alert('Análisis léxico completado:\n' + JSON.stringify(response.data));
         } catch (error) {
             console.error('Error al realizar el análisis léxico:', error);
             alert('Ocurrió un error al realizar el análisis léxico');
@@ -19,15 +19,17 @@ function AnalysisButton({ code, onAnalysisResult }) {
 
     // Función para manejar el clic en el botón de análisis sintáctico
     const handleAnalisisSintactico = async () => {
-        // Llamada a la API para análisis sintáctico
-        // try {
-        //     const response = await fetch('url_analisis_sintactico');
-        //     const data = await response.json();
-        //     console.log('Resultado del análisis sintáctico:', data);
-        // } catch (error) {
-        //     console.error('Error en el análisis sintáctico:', error);
-        // }
-        alert("Funcional en fase 2");
+        try {
+
+            const response = await axios.post('http://localhost:8080/analisisSintactico', { texto: code });
+            onAnalysisResult(response.data);
+            alert('Se envio analisis sintactico')
+           // alert('Análisis léxico completado:\n' + JSON.stringify(response.data));
+        } catch (error) {
+            console.error('Error al realizar el análisis léxico:', error);
+            alert('Ocurrió un error al realizar el análisis léxico');
+
+        }
     };
 
     return (
